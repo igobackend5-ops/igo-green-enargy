@@ -15,8 +15,8 @@ export default function InvestorsPage() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-5 mb-10">
-          <img src="/images/wind-bg.png" alt="Investor relations background" className="h-56 w-full object-cover rounded-2xl border border-white/15" />
-          <img src="/images/solar-bg.png" alt="Renewable assets" className="h-56 w-full object-cover rounded-2xl border border-white/15" />
+          <img src="/images/investor-1.jpg" alt="IGO AgriTechFarms team discussion" className="h-56 w-full object-cover rounded-2xl border border-white/15" />
+          <img src="/images/investor-2.jpg" alt="IGO AgriTechFarms field consultation" className="h-56 w-full object-cover rounded-2xl border border-white/15" />
         </div>
 
         <section className="mb-8 bg-white/5 p-6 rounded-2xl border border-white/10 backdrop-blur-sm">
