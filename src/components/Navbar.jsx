@@ -13,7 +13,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-[100] bg-white border-b border-green-900/10">
+    <nav className="fixed top-0 left-0 w-full z-[100] bg-transparent border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           
@@ -21,7 +21,7 @@ export default function Navbar() {
           <a href="/" className="flex items-center gap-3">
             <img src="/images/igo-group-logo.jpg" alt="IGO Group logo" className="h-12 object-contain" />
             <div>
-              <span className="font-serif text-2xl font-semibold tracking-tight text-black block leading-tight">
+              <span className="font-serif text-2xl font-semibold tracking-tight text-white block leading-tight">
                 IGO Green Energies
               </span>
             </div>
@@ -33,7 +33,7 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-black hover:text-brandGreen font-sans font-medium text-sm transition-colors duration-200"
+                className="text-white hover:text-brandGreen font-sans font-medium text-sm transition-colors duration-200"
               >
                 {link.name}
               </a>
@@ -54,7 +54,7 @@ export default function Navbar() {
           <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-lg text-black hover:bg-black/5 focus:outline-none transition-colors"
+              className="inline-flex items-center justify-center p-2 rounded-lg text-white hover:bg-white/10 focus:outline-none transition-colors"
               aria-expanded={isOpen}
             >
               {isOpen ? <TbX className="h-6 w-6" /> : <TbMenu2 className="h-6 w-6" />}
@@ -66,7 +66,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Dropdown */}
       <div
-        className={`lg:hidden absolute top-20 left-0 w-full bg-white border-b border-green-900/10 shadow-lg transition-all duration-300 transform ${
+        className={`lg:hidden absolute top-20 left-0 w-full bg-black/30 backdrop-blur-md border-b border-white/10 shadow-lg transition-all duration-300 transform ${
           isOpen ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-4 invisible pointer-events-none'
         }`}
       >
@@ -76,7 +76,7 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="block px-3 py-2 rounded-lg text-base font-sans font-medium text-black hover:bg-black/5 hover:text-brandGreen transition-colors"
+              className="block px-3 py-2 rounded-lg text-base font-sans font-medium text-white hover:bg-white/10 hover:text-brandGreen transition-colors"
             >
               {link.name}
             </a>
