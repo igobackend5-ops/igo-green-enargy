@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80">
+  <defs>
+    <style>
+      .bg { fill: #0b6b3a; }
+      .text { fill: #ffffff; font-family: Georgia, 'Times New Roman', serif; font-weight: 700; font-size: 28px; }
+    </style>
+  </defs>
+  <rect width="240" height="80" rx="10" class="bg" />
+  <text x="20" y="50" class="text">IGO Green</text>
+</svg>

@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans font-light bg-black text-white scroll-smooth;
+  }
+  h1, h2, h3 {
+    @apply font-serif font-semibold;
+  }
+  button, nav, label, a {
+    @apply font-sans;
+  }
+}
